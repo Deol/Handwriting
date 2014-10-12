@@ -1,0 +1,180 @@
+/*****Public*****/
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body {
+	text-align: center;
+	font-family: Microsoft Yahei;
+	color: #333;
+	font-size: 12px;
+	background-color: #EDEBEC;
+}
+
+input{font-size: 1em;font-family: arial,sans-serif;}
+
+button {font-family: Microsoft Yahei;}
+
+.loginPact			{text-decoration: none;color: #14647d;}
+.loginPact:link 	{color: #14647d;}
+.loginPact:visited 	{color: #14647d;}
+.loginPact:active 	{color: #14647d;}
+.loginPact:hover 	{color: #0092d2;text-decoration: underline;}
+
+.floatLeft {float: left;}
+
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  zoom: 1;
+}
+
+/********Login********/
+.page{
+	position: relative;
+	background-color: #EDEBEC;
+}
+
+.masklayer{
+	background-color: rgb(0, 0, 0);
+	opacity: .3;
+	position: absolute;
+	display: none;
+}
+
+.loginBtn{
+	height: 50px;
+	width: 100px;
+	margin: 20px auto;
+	background-color: #fff;
+	font-size: 18px;
+	background-image:-webkit-gradient(linear,0% 50%, 0% 0%, from(#F4F4F4), to(#FFFFFF));
+}
+	.loginBtn:hover{
+		background-image:-webkit-gradient(linear,0% 0%, 0% 50%, from(#F4F4F4), to(#FFFFFF));
+	}
+
+.loginBox{
+	width: 433px;
+	height: 293px;
+	position: absolute;
+	background-color: #ecf0f1;
+	display: none;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	box-shadow:0px 5px 15px #333333;
+	-moz-box-shadow:0px 5px 15px #333333; 
+	-webkit-box-shadow:0px 5px 15px #333333; 
+}
+	.loginHeader{
+		height: 62px;
+	}
+		.loginClose{
+			height: 21px;
+			width: 21px;
+			cursor: pointer;
+			margin: 10px;
+			float: right;
+			display: block;
+			background: url("../img/close.png") no-repeat;
+		}
+	.loginTab{
+		padding-left: 36px;
+		margin-top: 10px;
+		border-bottom: 1px solid #b4b4b3;
+		display: block;
+	}
+		.loginIcon{
+			display: block;
+			height: 13px;
+			width: 13px;
+			position: absolute;
+			background: url("../img/slide.png") no-repeat;
+			top: 10px;
+			left: 25px;
+		}
+			.loginIcon1{
+				background-position: 0px 0px;
+			}
+			.loginIcon2{
+				background-position: 0px -20px;
+			}
+		.tabLi{
+			float: left;
+			display: inline;
+			position: relative;
+			top: 1px;
+			padding: 0 27px 0 43px;
+			padding-top: 6px;
+			height: 22px;
+			line-height: 22px;
+			margin-left: 20px;
+			overflow: hidden;
+			font-weight: 700;
+			border: 1px solid #b4b4b3;
+		}
+			.tabLi1{
+				background-color: #ecf0f1;
+				border-bottom: 1px solid #ecf0f1;
+			}
+			.tabLi2{
+				background-color: #edece9;
+			}
+			.tabText{
+				cursor: pointer;
+			}
+
+	.loginArea1,.loginArea2{
+		padding: 18px 0;
+		text-align: center;
+	}
+		.loginRow{
+			padding-bottom: 10px;
+		}
+			.loginLabel{
+				display: inline-block;
+				width: 48px;
+			}
+			.areaText{
+				color: #444;
+				border-color: #9f9f9f #dcdcdc #dcdcdc #9f9f9f;
+				border-style: solid;
+				border-width: 1px;
+				padding: 3px 2px;
+				height: 14px;
+				width: 180px;
+			}
+			.submitBtn{
+				width: 111px;
+				height: 30px;
+				display: inline-block;
+				border: 0;
+				color: #fff;
+				font-size: 14px;
+				line-height: 30px;
+				text-align: center;
+				font-family: "Microsoft YaHei";
+				cursor: pointer;
+				vertical-align: middle;
+				background-color: #FF7A09;
+				background: -webkit-gradient(linear,0% 19%, 0% 55%, from(#FF860C), to(#FF7A09));
+				background: -moz-linear-gradient(0% 55% 50deg, #FF860C,#FF7A09);
+				border-radius: 2px;
+				-moz-border-radius: 2px;
+				-webkit-border-radius: 2px;
+			}
+		.loginNote{
+			width: 100%;
+			color: gray;
+			position: absolute;
+			bottom: 12px;
+			left: 0;
+			cursor: default;
+		}
